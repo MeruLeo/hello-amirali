@@ -1,0 +1,118 @@
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css");
+@import url("https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css");
+@import url('https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+.bg-gradian {
+  background: linear-gradient(to right, #ff8660, #9a33ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: gradient-animation 5s infinite alternate;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.btn-shine {
+  position: relative;
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 515px;
+  }
+  100% {
+    background-position: 515px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 515px;
+  }
+  100% {
+    background-position: 515px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 515px;
+  }
+  100% {
+    background-position: 515px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 515px;
+  }
+  100% {
+    background-position: 515px;
+  }
+}
+
+.open-animation {
+  animation: openOtherSkills 0.5s ease forwards;
+}
+
+@keyframes openOtherSkills {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.close-animation {
+  animation: closeOtherSkills 0.5s ease forwards;
+}
+
+@keyframes closeOtherSkills {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+    display: flex;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20%);
+    display: none;
+  }
+}
+
+
+.back-color {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
